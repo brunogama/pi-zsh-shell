@@ -1,0 +1,38 @@
+{
+  "name": "@brngp/pi-zsh-shell",
+  "version": "0.1.0",
+  "description": "A Pi extension that runs the built-in bash tool through zsh on macOS.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "zsh",
+    "macos"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunogama/pi-zsh-shell.git"
+  },
+  "homepage": "https://github.com/brunogama/pi-zsh-shell#readme",
+  "bugs": {
+    "url": "https://github.com/brunogama/pi-zsh-shell/issues"
+  },
+  "files": [
+    "index.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
